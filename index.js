@@ -23,7 +23,7 @@ files.forEach((file) => {
   {
     type: 'input',
     name: 'apiKey',
-    message: 'please provide your api key'
+    message: 'please provide your deepl api key'
   },
   {
     type: 'list',
