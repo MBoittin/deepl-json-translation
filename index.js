@@ -1,6 +1,9 @@
+#!/usr/bin/env node
+
 const translate = require("deepl");
-var fs = require('fs');
-var inquirer = require('inquirer');
+const fs = require('fs');
+const inquirer = require('inquirer');
+const path = require('path')
 
 let target_lang = ''
 let apiKey = ''
@@ -9,7 +12,8 @@ let free = ''
 const files = process.argv.slice(2)
 
 files.forEach((file) => {
-  const json = require(file)
+  const absoluteFile = path.resolve(file)
+  const json = require(absoluteFile)
   const fileSplit = file.split('/')
   const fileName = fileSplit[fileSplit.length - 1].split('.')[0]
 
