@@ -1,4 +1,4 @@
-# json trad
+# deepl-json-translation
 
 Just a simple json traduction for i18n like file using deepl
 
